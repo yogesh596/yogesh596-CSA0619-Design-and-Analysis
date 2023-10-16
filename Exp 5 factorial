@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int i,num;
+	unsigned long long fact=1;
+	printf("Enter the value of num :");
+	scanf("%d",&num);
+	if (num<0)
+	printf("error!factriol of  negitives values are does not extist. ");
+	else
+	{
+		for (i = 1;i<=num;++i)
+		{
+			fact*=i;
+		}
+		printf("factorial of %d=%llu",num,fact);
+	}
+	return 0;
+}
